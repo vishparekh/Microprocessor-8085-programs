@@ -1,0 +1,21 @@
+;<Vishal Parekh - 130280107064>
+;<Subtraction using 1's complement>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI B,05H
+MVI C,02H
+MOV A,B
+CMA
+ADD C
+JNC JUMP
+INR A
+MOV H,A
+JUMP: CMA
+MOV H,A
+hlt

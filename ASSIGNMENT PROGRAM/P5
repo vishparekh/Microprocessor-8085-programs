@@ -1,0 +1,21 @@
+;<Vishal Parekh - 130280107064>
+;<Find greatest no from input data>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI B,05H
+LXI H,2000H
+MOV A,H
+BACK: CMP M
+JC JUMP
+MOV A,M
+JUMP: INR H
+DCR B
+JNZ BACK 
+MOV E,A
+hlt

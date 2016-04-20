@@ -1,0 +1,20 @@
+;<Vishal Parekh - 130280107064>
+;<Positive or Negative>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+STC
+CMC
+MVI C,00H
+MOV A,C
+RLC
+JC JUMP
+MVI B,99H
+HLT
+JUMP: MVI B,00H
+HLT

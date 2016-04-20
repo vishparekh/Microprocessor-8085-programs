@@ -1,0 +1,23 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI E,05H
+MVI D,00H
+MVI A,04H
+LXI H,0000H
+MVI C,08H
+BACK: DAD H
+RAL
+JNC JUMP
+DAD D
+JUMP: DCR C
+JNZ BACK
+hlt

@@ -1,0 +1,29 @@
+;<Vishal Parekh - 130280107064>
+;<Count no of 1 in given 16-bit input data>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI E,00H
+MVI D,00H
+MVI B,10H
+MVI C,08H
+LXI H,07H
+MOV A,H
+BACK: RLC
+JNC LOOP
+INR E
+LOOP: DCR B
+DCR C
+JNZ BACK
+MOV A,L
+BAK: RLC
+JNC MAST
+INR E
+MAST: DCR B
+JNZ BAK
+hlt

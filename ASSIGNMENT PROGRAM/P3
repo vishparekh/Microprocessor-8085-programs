@@ -1,0 +1,20 @@
+;<Vishal Parekh - 130280107064>
+;<Count no of 1 in given 8-bit input data>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI C,08H
+MVI B,08H
+MVI E,00H
+MOV A,B
+BACK: RLC 
+JNC JUMP
+INR E
+JUMP: DCR C
+JNZ BACK
+hlt

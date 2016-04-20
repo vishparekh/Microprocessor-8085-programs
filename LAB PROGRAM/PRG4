@@ -1,0 +1,16 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+LXI D,2000H
+LXI H,2002H
+DAD D
+
+hlt

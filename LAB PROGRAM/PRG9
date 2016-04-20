@@ -1,0 +1,29 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI H,00H
+MVI L,2CH
+MVI B,06H
+LXI D,0000H
+BACK: MOV A,L
+SUB B
+MOV L,A
+JNC JUMP
+DCR H
+JUMP: INX D
+MOV A,H
+CPI 00H
+JNZ BACK
+MOV A,L
+CMP B
+JNC BACK
+MOV H,A
+hlt

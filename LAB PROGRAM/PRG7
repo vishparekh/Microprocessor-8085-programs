@@ -1,0 +1,15 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI A,02H
+CMA
+INR A
+hlt

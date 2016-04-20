@@ -1,0 +1,22 @@
+;<Vishal Parekh - 130280107064>
+;<Find answer of (-29)+(-31)+(-28)+(-12)>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI B,29H
+MVI C,31H
+MVI D,28H
+MVI E,12H
+MOV A,B
+ADD C
+ADD D
+ADD E
+CMA
+INR A
+hlt

@@ -1,0 +1,22 @@
+;<Vishal Parekh - 130280107064>
+;<Subtraction using 2's complement>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI B,08H
+MVI C,04H
+MOV A,C
+CMA 
+INR A
+ADD B
+JNC JUMP
+HLT
+JUMP: CMA 
+INR A
+hlt

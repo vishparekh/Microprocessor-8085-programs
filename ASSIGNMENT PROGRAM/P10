@@ -1,0 +1,17 @@
+;<Vishal Parekh - 130280107064>
+;<Checking of parity bit>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI B,00H
+MOV A,B
+JPE SKIP
+LXI H,00H
+HLT
+SKIP: LXI H,99H
+hlt
